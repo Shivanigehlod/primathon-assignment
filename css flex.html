@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .parent{
+           width:500px;
+           font-size: 20px;
+           /* position: absolute;
+           top: 200px;
+           right: 500px; */
+         }
+        .header{
+            background-color: tomato;
+            padding: 10px;
+            text-align: center;
+        }
+        .main2{
+            background-color: dodgerblue;
+            padding:10px;
+            text-align: center;
+        }
+        .aside{
+            display: flex;
+         }
+        .aside .left{
+            flex-basis: 50%;
+            background-color: yellow;
+            text-align: center;
+            padding: 10px;
+         }
+         .aside .right{
+            flex-basis: 50%;
+            background-color: rgb(255, 0, 238);
+            text-align: center;
+            padding: 10px;
+         }
+         .footer{
+            background-color: green;
+            padding: 10px;
+            text-align: center;
+         }
+    </style>
+
+</head>
+<body class="container">
+    <div class="parent">
+    <div class="header">Header</div>
+    <div class="main2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam, laborum iure eos natus suscipit recusandae quisquam, debitis cupiditate nemo sequi amet praesentium rerum unde minima molestiae voluptatem? Obcaecati, placeat.</div>
+    <div class="aside">
+        <div class="left">Aside 1</div>
+        <div class="right">Aside 2</div>
+    </div>
+    <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
